@@ -117,12 +117,12 @@
   </li>
         <li class="menu-item menu-item-tags">
 
-    <a href="/tags/" rel="section"><i class="fa fa-fw fa-tags"></i>标签<span class="badge">2</span></a>
+    <a href="/tags/" rel="section"><i class="fa fa-fw fa-tags"></i>标签<span class="badge">3</span></a>
 
   </li>
         <li class="menu-item menu-item-categories">
 
-    <a href="/categories/" rel="section"><i class="fa fa-fw fa-th"></i>分类<span class="badge">0</span></a>
+    <a href="/categories/" rel="section"><i class="fa fa-fw fa-th"></i>分类<span class="badge">2</span></a>
 
   </li>
         <li class="menu-item menu-item-archives">
@@ -170,7 +170,7 @@
       <header class="post-header">
         <h1 class="post-title" itemprop="name headline">
           
-            <a href="/2020/02/18/hexo-notes/" class="post-title-link" itemprop="url">hexo-notes</a>
+            <a href="/2020/02/18/hexo-notes/" class="post-title-link" itemprop="url">hexo笔记</a>
         </h1>
 
         <div class="post-meta">
@@ -179,9 +179,26 @@
                 <i class="fa fa-calendar-o"></i>
               </span>
               <span class="post-meta-item-text">发表于</span>
-              
 
-              <time title="创建时间：2020-02-18 21:06:51 / 修改时间：21:25:38" itemprop="dateCreated datePublished" datetime="2020-02-18T21:06:51+08:00">2020-02-18</time>
+              <time title="创建时间：2020-02-18 20:20:02" itemprop="dateCreated datePublished" datetime="2020-02-18T20:20:02+08:00">2020-02-18</time>
+            </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                <span class="post-meta-item-text">更新于</span>
+                <time title="修改时间：2020-02-19 15:00:00" itemprop="dateModified" datetime="2020-02-19T15:00:00+08:00">2020-02-19</time>
+              </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/hexo/" itemprop="url" rel="index">
+                    <span itemprop="name">hexo</span>
+                  </a>
+                </span>
             </span>
 
           
@@ -203,7 +220,7 @@
 <h2 id="更换-hexo-主题"><a href="#更换-hexo-主题" class="headerlink" title="更换 hexo 主题"></a>更换 <code>hexo</code> 主题</h2><p>下载主题</p>
 <figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git clone https:<span class="comment">//github.com/HeskeyBaozi/hexo-theme-lite themes/lite</span></span><br></pre></td></tr></table></figure>
 <p>配置主题</p>
-<p>在 <code>_config.yml</code> 中找到 <code>theme</code> 配置项，将其设置为 <code>lite</code>：</p>
+<p>在 <code>_config.yml</code> 中找到 <code>theme</code> 配置项，将其设置为 <code>next</code>：</p>
 <figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">theme: lite</span><br></pre></td></tr></table></figure>
 
 <h2 id="新建第一个笔记"><a href="#新建第一个笔记" class="headerlink" title="新建第一个笔记"></a>新建第一个笔记</h2><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo <span class="keyword">new</span> <span class="string">'node入门'</span></span><br></pre></td></tr></table></figure>
@@ -225,7 +242,7 @@
 <figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install hexo-deployer-git --save</span><br></pre></td></tr></table></figure>
 
 <p>修改部署配置，打开 <code>_config.yml</code>，找到 <code>deploy</code> 配置项</p>
-<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">deploy:</span><br><span class="line">  type: <span class="string">'git'</span></span><br><span class="line">  repo: https:<span class="comment">//github.com/shealain/hexo-notes.git</span></span><br><span class="line">  branch: [gh-pages]</span><br></pre></td></tr></table></figure>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">deploy:</span><br><span class="line">  type: <span class="string">'git'</span></span><br><span class="line">  repo: https:<span class="comment">//github.com/shealain/shealain.github.io.git</span></span><br><span class="line">  branch: [master]</span><br></pre></td></tr></table></figure>
 
 <p>执行部署命令</p>
 <figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm run deploy</span><br></pre></td></tr></table></figure>
@@ -286,8 +303,19 @@
                   <i class="fa fa-calendar-check-o"></i>
                 </span>
                 <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2020-02-19 14:18:37" itemprop="dateModified" datetime="2020-02-19T14:18:37+08:00">2020-02-19</time>
+                <time title="修改时间：2020-02-19 15:00:06" itemprop="dateModified" datetime="2020-02-19T15:00:06+08:00">2020-02-19</time>
               </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/node/" itemprop="url" rel="index">
+                    <span itemprop="name">node</span>
+                  </a>
+                </span>
+            </span>
 
           
 
@@ -386,9 +414,17 @@
           <span class="site-state-item-name">日志</span>
         </a>
       </div>
-      <div class="site-state-item site-state-tags">
+      <div class="site-state-item site-state-categories">
+            <a href="/categories/">
+          
         <span class="site-state-item-count">2</span>
-        <span class="site-state-item-name">标签</span>
+        <span class="site-state-item-name">分类</span></a>
+      </div>
+      <div class="site-state-item site-state-tags">
+            <a href="/tags/">
+          
+        <span class="site-state-item-count">3</span>
+        <span class="site-state-item-name">标签</span></a>
       </div>
   </nav>
 </div>
